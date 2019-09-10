@@ -17,9 +17,9 @@ app.get('/', (req, res) =>
   }),
 );
 
-app.get((req, res) =>
-  res.status(401).json({
-    status: 401,
+app.use((req, res) =>
+  res.status(404).json({
+    status: 404,
     message: 'Bad URL.',
   }),
 );
