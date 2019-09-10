@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/Oyekunle-Mark/tip-of-the-walking-stick/issues"
   },
-  "homepage": "https://github.com/Oyekunle-Mark/tip-of-the-walking-stick#readme"
+  "homepage": "https://github.com/Oyekunle-Mark/tip-of-the-walking-stick#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.0",
+    "mongoose": "^5.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2",
+    "morgan": "^1.9.1"
+  }
 }
