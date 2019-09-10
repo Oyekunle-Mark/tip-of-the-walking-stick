@@ -1,0 +1,23 @@
+{
+  "name": "tip-of-the-walking-stick",
+  "version": "1.0.0",
+  "description": "A CRUD server in express and mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oyekunle-Mark/tip-of-the-walking-stick.git"
+  },
+  "keywords": [
+    "express",
+    "mongo"
+  ],
+  "author": "oyekunle-mark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oyekunle-Mark/tip-of-the-walking-stick/issues"
+  },
+  "homepage": "https://github.com/Oyekunle-Mark/tip-of-the-walking-stick#readme"
+}
