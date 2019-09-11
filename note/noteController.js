@@ -3,6 +3,7 @@ const {
   getSingleNote,
   createNote,
   updateNote,
+  removeNote,
 } = require('../database/dbHelper');
 
 const getNotes = async (req, res) => {
@@ -45,9 +46,21 @@ const editNote = async (req, res) => {
   });
 };
 
+const deleteNote = async (req, res) => {
+  const { id } = req.params;
+
+  const note = await removeNote(id);
+
+  res.status(200).json({
+    status: 200,
+    data: note,
+  });
+};
+
 module.exports = {
   getNotes,
   addNote,
   getANote,
   editNote,
+  deleteNote,
 };
