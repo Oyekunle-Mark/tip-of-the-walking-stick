@@ -8,6 +8,7 @@ module.exports = new mongoose.Schema({
   },
   body: {
     type: String,
+    required: true,
     minlength: 15,
   },
 });
