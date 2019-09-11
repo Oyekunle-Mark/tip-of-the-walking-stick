@@ -7,9 +7,9 @@ const getSingleNote = id => Note.findById(id).exec();
 const createNote = note => Note.create(note);
 
 const updateNote = (id, note) =>
-  Note.findOneAndUpdate(id, note, { new: true }).exec();
+  Note.findOneAndUpdate({ _id: id }, note, { new: true }).exec();
 
-const removeNote = id => Note.findByIdAndRemove(id);
+const removeNote = id => Note.findByIdAndRemove(id).exec();
 
 module.exports = {
   getAllNotes,
