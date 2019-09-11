@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const logger = require('morgan');
 
 const app = express();
+const noteRouter = require('../note');
 
 app.use(express.json());
 app.use(cors());
@@ -16,6 +17,8 @@ app.get('/', (req, res) =>
     message: 'Server up and about!!!',
   }),
 );
+
+app.use('/api', noteRouter);
 
 app.use((req, res) =>
   res.status(404).json({
