@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+mongoose.set('useCreateIndex', true);
+
 module.exports = new mongoose.Schema({
   title: {
     type: String,
