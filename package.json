@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "DEBUG=noteCRUD,express* nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Oyekunle-Mark/tip-of-the-walking-stick#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "debug": "^4.1.1",
     "express": "^4.17.1",
     "helmet": "^3.21.0",
     "mongoose": "^5.7.0",

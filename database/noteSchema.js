@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.set('useCreateIndex', true);
 
-module.exports = new mongoose.Schema(
+const noteSchema = new mongoose.Schema(
   {
     title: {
       type: String,
@@ -19,3 +19,5 @@ module.exports = new mongoose.Schema(
     timestamps: true,
   },
 );
+
+module.exports = mongoose.model('note', noteSchema);

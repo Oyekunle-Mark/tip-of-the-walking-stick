@@ -1,4 +1,4 @@
-const Note = require('./noteModel');
+const Note = require('./noteSchema');
 
 const getAllNotes = () => Note.find({}).exec();
 
